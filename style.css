@@ -1,0 +1,105 @@
+div#game{
+	width:600px;
+}
+
+div#game div#map{
+	width:600px; 
+	height:559px;
+	border:1px solid black; 
+	background-image:url('img/map_small.png');
+	position:relative;
+}
+
+div#game div#map div#startscreen{
+	width:500px;
+	height:230px;
+	margin:150px 50px;
+	background-color:#FFFFFF;
+	overflow:hidden;
+	text-align:center;
+	border:1px solid #0079c2;
+}
+
+div#game div#map div#startscreen .title{
+	font-size:20pt;
+	font-weight:bold;
+	margin-top:20px;
+	color:#0079c2;
+}
+div#game div#map div#startscreen .rules{
+	width:460px;
+	margin:0 auto;
+	text-align:left;
+	font-weight:bold;
+}
+
+div#game div#map div#startscreen a{
+	font-weight:bold;
+	color:#0079c2;
+	font-size:16pt;
+}
+
+div#game div#map div#game_info{
+	width:400px;
+	height:50px;
+	font-size:15pt;
+	font-weight:bold;
+	margin:10px;
+	display:none;
+	
+}
+
+div#game div#map img#flag_yellow{
+	position:absolute;
+	top:250px;
+	left:250px;
+	display:none;
+}
+
+div#game div#map img#flag_green{
+	position:absolute;
+	top:200px;
+	left:200px;
+	display:none;
+}
+
+div#game div#map div#message{
+	width:500px;
+	position:absolute;
+	top:350px;
+	left:50px;
+	text-align:center;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-size:18px;
+	background-color:#20981d;
+	border:1px solid #FFFFFF;
+	padding:5px 3px;
+	display:none;
+}
+
+div#game div#map div#message a{
+	color:#FFFFFF;
+}
+
+div#game div#map div#message input{
+	border:1px solid #FFFFFF;
+	margin-left:5px;
+}
+
+div#highscores table{
+	margin-left:100px;
+}
+
+div#highscores table td{
+	font-weight:bold;
+	font-size:14px;
+}
+
+div#highscores table td.num{
+	width:60px;
+}
+
+div#highscores table td.name{
+	width:300px;
+}

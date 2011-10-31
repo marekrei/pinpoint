@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Pinpoint</title>
+	<script src="js/pinpoint.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="game">
+	<div id="map" onclick="clickMap(event);">
+		<div id="game_info">Target: <span id="game_target">LBG Tallinn</span><br />Score:<span id="game_score">1000</span></div>
+		<div id="startscreen">
+			<div class="title">LBG Pinpoint</div>
+			<div class="rules"><p>Local BEST Groups (LBGs) are scattered around Europe. Most of them are named after the cities they are located in. Try to find them on the map!</p>
+			<p>Your score depends on how accurate you are and how much time it takes.</p>
+			</div>
+			<a href="#game" onclick="ajaxNextQuestion(true);">Start game</a>
+		</div>
+		<img src="img/flag_yellow.gif" alt="Your guess" id="flag_yellow" />
+		<img src="img/flag_green.gif" alt="Correct answer" id="flag_green" />
+		<div id="message"></div>
+	</div>
+</div>
+<br />
+<h2>TOP 25 highscores:</h2>
+
+<div id="highscores"></div>
+<script type="text/javascript">
+<!--	
+	ajaxLoadHighscores();
+//-->
+</script>
+</body>
+</html>
